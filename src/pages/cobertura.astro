@@ -1,0 +1,154 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import Estilos from "../components/assets/css/main.css";
+import Image from "../components/images/CUSCO.jpg";
+import Image1 from "../components/images/San Sebastian.webp";
+import Image2 from "../components/images/CUSCO wancha.jpg";
+import Image3 from "../components/images/San Jeronimo.jpg";
+import Image4 from "../components/images/Abancay.jpg";
+import Image5 from "../components/images/abancay1.jpg";
+---
+
+<Layout title="Fix - Cobertura">
+    <main>
+        <Header />
+        <body class="is-preload landing">
+            <div id="page-wrapper">
+                
+                    <section id="banner">
+                        <div class="content">
+                            <div>
+                                <h2>Nuestra Cobertura</h2>
+                                <p>Conose nuetras ubicaciones.<br />
+                                zona de Cusco y Abancay.</p>
+                            </div>
+                            <div class="content-images">
+                                <span class="image"><img src={Image.src} alt="" /></span>
+                                <span class="image"><img src={Image4.src} alt="" /></span>
+                            </div>
+                        </div>
+                    </section>
+    
+                <!-- One -->
+    
+                <!-- Two -->
+                    <section id="two" class="spotlight style2 right">
+                        <div class="content-zona1">
+                            <div class="content-imgcusco">
+                                <img src={Image1.src} alt="">
+                            </div>
+                            <div class="content-info">
+                                <header>
+                                    <h2>San Sebastian</h2>
+                                    <p>Tenemos una cobertura total en todo el distrito con conexiones de calidad</p>
+                                </header>
+                                <p>
+                                    Sujeto a facilidades técnicas y zonas de cobertura.
+                                    Valida tu cobertura llamando o ingresando un pedido por la web.
+                                </p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button">Contrato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+    
+                <!-- Three -->
+                    <section id="two" class="spotlight style2 right">
+                        <div class="content-zona1">
+                            <div class="content-info">
+                                <header>
+                                    <h2>Wanchaq</h2>
+                                    <p>Tenemos una cobertura total en todo el distrito con conexiones de calidad</p>
+                                </header>
+                                <p>
+                                    Sujeto a facilidades técnicas y zonas de cobertura.
+                                    Valida tu cobertura llamando o ingresando un pedido por la web.
+                                </p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button">Contrato</a></li>
+                                </ul>
+                            </div>
+                            <div class="content-imgcusco">
+                                <img src={Image2.src} alt="">
+                            </div>
+                        </div>
+                    </section>
+    
+                <!-- Four -->
+
+                
+                <section id="two" class="spotlight style2 right">
+                    <div class="content-zona1">
+                        <div class="content-imgcusco">
+                            <img src={Image3.src} alt="">
+                        </div>
+                        <div class="content-info">
+                            <header>
+                                <h2>San Jeronimo</h2>
+                                <p>Tenemos una cobertura total en todo el distrito con conexiones de calidad</p>
+                            </header>
+                            <p>
+                                Sujeto a facilidades técnicas y zonas de cobertura.
+                                Valida tu cobertura llamando o ingresando un pedido por la web.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="#" class="button">Contrato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- -->
+                <section id="two" class="spotlight style2 right">
+                    <div class="content-zona1">
+                        <div class="content-info">
+                            <header>
+                                <h2>Abancay</h2>
+                                <p>Tenemos una cobertura total en todo el distrito con conexiones de calidad</p>
+                            </header>
+                            <p>
+                                Sujeto a facilidades técnicas y zonas de cobertura.
+                                Valida tu cobertura llamando o ingresando un pedido por la web.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="#" class="button">Contrato</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-imgcusco">
+                            <img src={Image5.src} alt="">
+                        </div>
+                    </div>
+                </section>
+                <!-- Five -->
+                    <section id="five" class="wrapper style2 special fade">
+                        <div class="container">
+                            <header>
+                                <h2>Fix-Cusco conexiones</h2>
+                                <p>Contacto y promociones de nuestro productos</p>
+                            </header>	
+                            <form method="post" action="#" class="cta">
+                                <div class="row gtr-uniform gtr-50">
+                                    <div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Ingrese Email" /></div>
+                                    <div class="col-4 col-12-xsmall"><input type="submit" value="Registro" class="fit primary" /></div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+    
+            </div>
+            <!--STYLE-->
+            <Estilos />
+    
+            <!-- Scripts -->
+                <!--<script src="assets/js/main.js"></script>-->
+
+    
+        </body>
+    </main>
+    <Footer />
+</Layout>

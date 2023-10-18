@@ -1,0 +1,113 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Logo from "../img/logo.jpeg";
+import Return from "../img/return.png";
+---
+<Layout title="Iniciar Sesión">
+<div>
+    <div class="return">
+        <button class="btn-volver" onclick="history.back()">
+            <img src={Return.src} alt="">
+        </button>
+    </div>
+    <form class="form" action="/login" method="post">
+        <div class="login-content-logo">
+            <img src={Logo.src} alt="">
+        </div>
+        <div class="content-login">
+            <img src="https://miportal.win.pe/assets/images/logo-sesion.png" alt="">
+            <input type="text" name="correo" placeholder="Correo electrónico" class="login-input">
+            <input type="password" name="contraseña" placeholder="Contraseña" class="login-input">
+            <button type="submit" class="login-button">Iniciar sesión</button>
+            <a href="/registro" class="register-link">Registrarse</a>
+        </div>
+    </form>
+</div>
+</Layout>
+<style>
+    .form{
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .return{
+        padding: 5px 0 0 20px;
+
+    }
+    .btn-volver{
+        border: none;
+        background-color: transparent;
+    }
+    .btn-volver img{
+        width: 40px;
+    }
+
+    .login-content-logo img{
+        width: 400px;
+    }
+
+    .content-login{
+        background-color: #7cb3d1;
+        padding: 30px 50px 20px 50px;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .content-login img{
+        margin-bottom: 30px;
+    }
+
+    /* Estilos para los campos de entrada (correo electrónico y contraseña) */
+    .login-input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    /* Estilos para el botón de inicio de sesión */
+    .login-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #6a4caf;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Cambia el color del botón al pasar el mouse sobre él */
+    .login-button:hover {
+        background-color: #a384eb;
+        color: black;
+    }
+
+    /* Estilos para el enlace de registro */
+    .register-link {
+        width: 40%;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #000000;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* Cambia el color del enlace de registro al pasar el mouse sobre él */
+    .register-link:hover {
+        color: #243355;
+    }
+
+</style>

@@ -1,0 +1,392 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+
+import ImagePrincipal from "../img/pagina_principal.jpg";
+import ImagePrincipal2 from "../img/pagina_principal2.jpg";
+import ImagePrincipal3 from "../img/pagina_principal3.jpg";
+---
+
+<Layout title="Fix- Internet a tu Disposicion">
+	<main class="main-container">
+
+		<Header />
+		
+		<!--		Carrusel Inicio			-->
+		<div
+			id="carouselExampleAutoplaying"
+			class="carousel slide"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src={ImagePrincipal.src} class="d-block" alt="..." />
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Conectate a la velocidad de la luz</h3>
+						<p>
+							Descubre una experiencia de Internet más rápida y
+							confiable con nuestra conexión de fibra óptica de
+							alta velocidad. Navega, transmite y trabaja sin
+							problemas con la mejor tecnología en comunicación.
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src={ImagePrincipal2.src} class="d-block" alt="..." />
+				</div>
+				<div class="carousel-item">
+					<img src={ImagePrincipal3.src} class="d-block" alt="..." />
+				</div>
+			</div>
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleAutoplaying"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"
+				></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleAutoplaying"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"
+				></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<!--			Carrusel Body			-->
+		<section class="section-planes">
+			<div class="container-planes">
+				<h2 class="planes-title">PLANES</h2>
+				<div class="carousel-cards">
+						<div class="cards-item">
+							<div class="card-top">
+								<h3>100 MB</h3>
+							</div>
+							<div class="card-mid">
+								<p>
+									100% Fibra Óptica<br />
+									100 MB
+								</p>
+								<p>S/ 80</p>
+							</div>
+							<div class="card-bot">
+								<a href="https://wa.me/+51946410439?text=Hola%20quiero%20información%20sobre%20el%20plan%20100%20MB">Quiero este Plan</a>
+								<p>Más Detalles</p>
+							</div>
+						</div>
+						<div class="cards-item">
+							<div class="card-top">
+								<h3>300 MB</h3>
+							</div>
+							<div class="card-mid">
+								<p>
+									100% Fibra Óptica<br />
+									300 MB
+								</p>
+								<p>S/ 80</p>
+							</div>
+							<div class="card-bot">
+								<a href="https://wa.me/+51946410439?text=Hola%20quiero%20información%20sobre%20el%20plan%20300%20MB">Quiero este Plan</a>
+								<p>Más Detalles</p>
+							</div>
+						</div>
+						<div class="cards-item">
+							<div class="card-top">
+								<h3>400 MB</h3>
+							</div>
+							<div class="card-mid">
+								<p>
+									100% Fibra Óptica<br />
+									400 MB
+								</p>
+								<p>S/ 80</p>
+							</div>
+							<div class="card-bot">
+								<a href="https://wa.me/+51946410439?text=Hola%20quiero%20información%20sobre%20el%20plan%20400%20MB">Quiero este Plan</a>
+								<p>Más Detalles</p>
+							</div>
+						</div>
+						<div class="cards-item">
+							<div class="card-top">
+								<h3>500 MB</h3>
+							</div>
+							<div class="card-mid">
+								<p>
+									100% Fibra Óptica<br />
+									500 MB
+								</p>
+								<p>S/ 80</p>
+							</div>
+							<div class="card-bot">
+								<a href="https://wa.me/+51946410439?text=Hola%20quiero%20información%20sobre%20el%20plan%20500%20MB">Quiero este Plan</a>
+								<p>Más Detalles</p>
+							</div>
+						</div>
+				</div>
+				<!--
+				<div class="controls">
+					<button class="prev"></button>
+					<button class="next">Siguiente</button>
+				</div> -->
+			</div>
+		</section>
+
+		<!--			Ubicación				-->
+		<section class="ubication">
+			<div class="content-ubicacion">
+				<h1>Zona de Cobertura</h1>
+				<div class="content-button-cober">
+					<a href="/cobertura">Comprueba tu Cobertura</a>
+				</div>
+			</div>
+		</section>
+
+		<!--			Beneficios				-->
+		<section class="why-selection">
+			<div class="content-whyselection">
+				<h2>
+					Beneficios de
+					<span>FIX</span>
+				</h2>
+				<div class="content-cards-why">
+					<div class="cards-why">
+						<span class="material-symbols-outlined">
+							speed
+						</span>
+						<p class="name-benef">Velocidad <br>de Descarga</p>
+						<p>Descarga tus archivos más rápido que nunca</p>
+					</div>
+					<div class="cards-why">
+						<span class="material-symbols-outlined">
+							network_check
+						</span>
+						<p class="name-benef">Menor <br>Latencia</p>
+						<p>Juega en línea sin retrasos</p>
+					</div>
+					<div class="cards-why">
+						<span class="material-symbols-outlined">
+							sync_alt
+						</span>
+						<p class="name-benef">Mayor <br>Estabilidad</p>
+						<p>Disfruta de una conexión más confiable</p>
+					</div>
+					<div class="cards-why">
+						<span class="material-symbols-outlined">
+							settings_ethernet
+						</span>
+						<p class="name-benef">Menor <br>Interferencia</p>
+						<p>Olvídate de los cortes y la pérdida de paquetes</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!--		Footer			-->
+	<Footer />
+</Layout>
+
+<!--		Estilos			-->
+<style>
+	.carousel-inner img {
+		width: 100%;
+		height: 85vh;
+	}
+
+	/*			Estilos CARDS		*/
+	.section-planes {
+		width: 100%;
+		padding: 20px 10px;
+		background-color: #fff;
+	}
+
+	.container-planes {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.planes-title {
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.carousel-cards {
+		display: flex;
+		align-items: center;
+		padding: 0 100px;
+	}
+
+.cards-item {
+  width: 500px;
+  margin: 10px;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 0 9px 0 rgb(0, 0, 0, 0.2);
+}
+
+.card-top {
+  text-align: center;
+  padding: 10px;
+  background-color: #55b8aa;
+  color: #fff;
+}
+.card-top h3{
+	margin: 0;
+}
+
+.card-mid {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-bot {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-bot a{
+	text-decoration: none;
+	width: 160px;
+	padding: 7px;
+	border-radius: 7px;
+	background-color: #977ada;
+	color: white;
+
+}
+.card-bot p{
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.prev,
+.next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #aaa;
+}
+
+.carousel-cards .cards-item.active {
+  z-index: 1;
+}
+
+
+
+	/*			Ubicación			*/
+	.ubication{
+		margin: 30px 0;
+		padding: 0 200px;
+	}
+	.content-ubicacion{
+		background-color: #636aa8;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 30px;
+	}
+	.content-ubicacion h1{
+		color: white;
+	}
+	.content-button-cober{
+		margin-top: 20px;
+	}
+	.ubication a{
+		background-color: rgb(255, 255, 255);
+		padding: 15px 30px;
+		text-decoration: none;
+		border-radius: 10px;
+		color: black;
+		font-weight: bold;
+	}
+
+	/*					Beneficios			*/
+	.why-selection{
+		margin: 40px 0;
+		padding: 30px 100px;
+	}
+	.content-whyselection{
+		padding: 30px 0;
+		background-color: white;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.content-cards-why{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: space-around;
+	}
+	.cards-why{
+		width: 300px;
+		height: 250px;
+		margin: 10px;
+		padding: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		border: 1px solid #a7c5c9;
+		border-radius: 20px;
+	}
+	.material-symbols-outlined{
+		color: #1f6872;
+	}
+	.name-benef{
+		margin: 0;
+		font-weight: bold;
+	}
+</style>
+<!--		JavaScript			-->
+<!--<script src="../components/JavaScript/carousel"></script>-->
+

@@ -1,0 +1,170 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Fix - Contacto">
+    <main>
+        <Header />
+        <div class="content-title">
+            <h2 class="title">CONTACTOS</h2>
+            <div class="linea"></div>
+        </div>
+        <body>
+            <div class="container">
+                <!-- Divisiones superiores -->
+                <div class="circle">
+                    <h5>MIGUEL ANGEL RAMOS MIRANDA</h5>
+                    <p>
+                        Telefono: +51965412314<br>
+                        Email: <a href="#">contacto1@gmail.com</a>
+                    </p>
+                </div>
+                <div class="circle">
+                    <h5>JOSEPH ANIBAL NUÑEZ MENDOZA</h5>
+                    <p>
+                        Telefono: +51965412314<br>
+                        Email: <a href="#">contacto1@gmail.com</a>
+                    </p>
+                </div>
+        
+                <!-- Divisiones inferiores -->
+                <div class="circle">
+                    <h5>GUALBERTO CANAVIRI GUTIERREZ</h5>
+                    <p>
+                        Telefono: +51965412314<br>
+                        Email: <a href="#">contacto1@gmail.com</a>
+                    </p>
+                </div>
+                <div class="circle">
+                    <h5>ALEJANDRO BARRIENTOS QUISPE</h5>
+                    <p>
+                        Telefono: +51965412314<br>
+                        Email: <a href="#">contacto1@gmail.com</a>
+                    </p>
+                </div>
+                <div class="circle">
+                    <h5>CHRISTIAN MAHATMA CCOLLANQUI HUAMAN</h5>
+                    <p>
+                        Telefono: +51965412314<br>
+                        Email: <a href="#">contacto1@gmail.com</a>
+                    </p>
+                </div>
+                
+                <!-- New div divided into two rows -->
+                <!--
+                <div class="new-div">
+                    <div class="row">
+                        <p>Encuéntranos en: Av. La Cultura 123</p>
+                    </div>
+                    <div class="row">
+                        <p>Nuestras Redes Sociales. Twitter: @Fix:Cobertura_Total_Fix, Facebook: Cobertura_Total_Official. Teléfono: +51 974958261</p>
+                    </div>
+                </div>
+                 -->
+            </div>
+        </body>
+    </main>
+    <Footer />
+</Layout>
+<!--            Estilos         -->
+<style>
+
+        /* TITLE */
+    .content-title{
+        padding: 50px 0 10px 0;
+    }
+    .content-title, .title{
+        display: flex;
+        justify-content: center;
+    }
+    .title{
+        margin: 0;
+        width: 500px;
+        background-color: #1f666b;
+        padding: 20px 5px;
+        border-radius: 10px;
+        color: aliceblue;
+    }
+
+        /* Estilos para el contenedor */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+            padding: 50px 20px;
+        }
+
+        /* Estilos para los círculos */
+        .circle {
+            background-color: #9aeaef;
+            padding: 0 10px;
+            border-radius: 0 70px 0 70px;
+            width: 273px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilos para los títulos */
+        .circle h1 {
+            color: #244c4e;
+            margin: 0;
+        }
+        
+        .circle h5 {
+            color: #ffffff;
+            margin: 7px;
+        }
+
+        /* Estilos para a */
+        .circle a{
+            text-decoration: none;
+            color: rgb(20, 73, 80);
+        }
+
+        /* Aplicar colores a círculos específicos */
+        .circle:nth-child(1) {
+            background-color: #9aeaef;
+        }
+
+        .circle:nth-child(2) {
+            background-color: #7c45ee;
+        }
+
+        .circle:nth-child(3) {
+            background-color: #8a7cf1;
+        }
+
+        .circle:nth-child(4) {
+            background-color: #60cbd0;
+        }
+
+        .circle:nth-child(5) {
+            background-color: #C588A5;
+        }
+
+
+        /* Estilos para el nuevo div */
+        .new-div {
+            grid-column: span 3; /* Span all three columns */
+            display: grid;
+            grid-template-rows: repeat(2, auto); /* Two rows with auto height */
+            gap: 20px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para las filas dentro del nuevo div */
+        .new-div .row {
+            background-color: #ffffff;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+</style>

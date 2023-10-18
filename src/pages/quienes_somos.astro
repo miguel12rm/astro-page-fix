@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import BannerCusco from "../components/images/cusco_quienes.jpg";
+---
+
+<Layout title="Fix - Quienes Somos">
+    <main>
+        <Header />
+        <div class="contenedor">
+          <div id="contenedor-imagen">
+            <div class="content-titulo">
+              <h1 id="titulo">QUIENES SOMOS</h1>
+            </div>
+            <img src={BannerCusco.src} alt="">
+            <div class="texto-superpuesto">Somos una empresa pequeña con grandes sueños de proporcionar servicios de Internet por fibra óptica de vanguardia a la población en general. Creemos que el acceso rápido y confiable a Internet es un derecho fundamental en la era digital, y estamos comprometidos a hacer que esta visión se convierta en una realidad para todos nuestros clientes. Con cada conexión, estamos construyendo un futuro más conectado y brillante para nuestra comunidad.</div>
+          </div>
+        </div>
+    </main>
+    <Footer />
+</Layout>
+<style>
+    
+#contenedor-imagen {
+  position: relative; /* Importante para posicionar elementos secundarios de manera absoluta */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
+  height: auto; /* Altura automática para adaptarse al contenido */
+}
+#contenedor-imagen img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 85vh; /* Altura automática para mantener la proporción de la imagen */
+}
+.texto-superpuesto {
+  width: 800px;
+  position: absolute; /* Permite posicionar el texto de manera absoluta */
+  top: 50%; /* Coloca el texto en la mitad superior del contenedor */
+  left: 50%; /* Coloca el texto en el centro horizontal del contenedor */
+  transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para hacer el texto legible */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado interno del texto */
+  font-weight: bold; /* Aplica negrita al texto */
+  font-size: 25px;
+}
+
+.content-titulo{
+  position: absolute;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+#titulo {
+  font-weight: bold; /* Aplica negrita al título */
+  font-size: 35px; /* Tamaño de letra más grande (ajusta según tus necesidades) */
+  color: rgb(10, 224, 227); /* Color de texto en formato RGB (rojo) */
+}
+#contenedorr-imagen img {
+  width: 100px; /* Ajusta el ancho de la imagen según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+</style>
