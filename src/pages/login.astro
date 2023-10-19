@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
 import Logo from "../img/logo.jpeg";
 import Return from "../img/return.png";
 ---
@@ -7,12 +8,12 @@ import Return from "../img/return.png";
 <div>
     <div class="return">
         <button class="btn-volver" onclick="history.back()">
-            <img src={Return.src} alt="">
+            <img src={Return} alt="">
         </button>
     </div>
     <form class="form" action="/login" method="post">
         <div class="login-content-logo">
-            <img src={Logo.src} alt="">
+            <img src={Logo} alt="">
         </div>
         <div class="content-login">
             <img src="https://miportal.win.pe/assets/images/logo-sesion.png" alt="">

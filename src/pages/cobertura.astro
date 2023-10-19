@@ -3,7 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-import Estilos from "../components/assets/css/main.css";
 import Image from "../components/images/CUSCO.jpg";
 import Image1 from "../components/images/San Sebastian.webp";
 import Image2 from "../components/images/CUSCO wancha.jpg";
@@ -26,8 +25,8 @@ import Image5 from "../components/images/abancay1.jpg";
                                 zona de Cusco y Abancay.</p>
                             </div>
                             <div class="content-images">
-                                <span class="image"><img src={Image.src} alt="" /></span>
-                                <span class="image"><img src={Image4.src} alt="" /></span>
+                                <span class="image"><img src={Image} alt="" /></span>
+                                <span class="image"><img src={Image4} alt="" /></span>
                             </div>
                         </div>
                     </section>
@@ -38,7 +37,7 @@ import Image5 from "../components/images/abancay1.jpg";
                     <section id="two" class="spotlight style2 right">
                         <div class="content-zona1">
                             <div class="content-imgcusco">
-                                <img src={Image1.src} alt="">
+                                <img src={Image1} alt="">
                             </div>
                             <div class="content-info">
                                 <header>
@@ -73,7 +72,7 @@ import Image5 from "../components/images/abancay1.jpg";
                                 </ul>
                             </div>
                             <div class="content-imgcusco">
-                                <img src={Image2.src} alt="">
+                                <img src={Image2} alt="">
                             </div>
                         </div>
                     </section>
@@ -84,7 +83,7 @@ import Image5 from "../components/images/abancay1.jpg";
                 <section id="two" class="spotlight style2 right">
                     <div class="content-zona1">
                         <div class="content-imgcusco">
-                            <img src={Image3.src} alt="">
+                            <img src={Image3} alt="">
                         </div>
                         <div class="content-info">
                             <header>
@@ -120,35 +119,40 @@ import Image5 from "../components/images/abancay1.jpg";
                             </ul>
                         </div>
                         <div class="content-imgcusco">
-                            <img src={Image5.src} alt="">
+                            <img src={Image5} alt="">
                         </div>
                     </div>
                 </section>
                 <!-- Five -->
-                    <section id="five" class="wrapper style2 special fade">
-                        <div class="container">
-                            <header>
-                                <h2>Fix-Cusco conexiones</h2>
-                                <p>Contacto y promociones de nuestro productos</p>
-                            </header>	
-                            <form method="post" action="#" class="cta">
-                                <div class="row gtr-uniform gtr-50">
-                                    <div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Ingrese Email" /></div>
-                                    <div class="col-4 col-12-xsmall"><input type="submit" value="Registro" class="fit primary" /></div>
-                                </div>
-                            </form>
-                        </div>
-                    </section>
-    
             </div>
-            <!--STYLE-->
-            <Estilos />
-    
-            <!-- Scripts -->
-                <!--<script src="assets/js/main.js"></script>-->
-
-    
         </body>
     </main>
     <Footer />
 </Layout>
+<style>
+    img{
+        width: 500px;
+        border-radius: 10px 50px;
+    }
+    /* BANNER  */
+    .content{
+        background-color: #3B666B;
+        padding: 30px 0 50px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .content-images{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Zona 1 */
+    .content-zona1{
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+</style>
